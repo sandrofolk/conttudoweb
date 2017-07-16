@@ -5,3 +5,7 @@
 .card .image {
     height: auto !important;
 }
+
+.navbar-ct-orange p {
+  color: #FFFFFF;
+}
