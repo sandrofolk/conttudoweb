@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" type="image/png" href="{{ '/assets/img/favicon.png' | prepend: site.baseurl }}">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<title>{{ site.title }} | {{ page.title|default:"Soluções em tecnologia" }}</title>
+
+    <meta name="Description" content="A ConTTudOweb é uma empresa de tecnologia dedicada a entregar produtos de qualidade e atualizados!">
+    <meta name="Keywords" content="conttudo web, conttudo, criar site, website, design, responsivo, marketing digital, ecommerce, e-commerce, desenvolvimento, desenvolvimento site, desenvolvimento web, sites, apucarana, paraná, empresa de web, web, criaçoes de sites, sistemas web, conttudo apucarana, manutenção de sites, banners, SEO, Lojas Virtuais, wordpress, agencia web, Publicidade On Line, design web, sites responsivos, sites apucarana, lojas virtuais apucarana, e-commerces apucarana, catalogo online, sistemas online">
+
+    <meta name="author" content="conttudoweb">
+    <meta name="owner" content="ConTTudOweb - Soluções em tecnologia" />
+
+    <meta property="og:image" content="">
+    <meta property="og:description" content="A ConTTudOweb é uma empresa de tecnologia dedicada a entregar produtos de qualidade e atualizados!">
+    <meta property="og:title" content="ConTTudOweb | Soluções em tecnologia">
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+
+    <!-- Bootstrap core CSS     -->
+    <link href="{{ '/assets/css/bootstrap.min.css' | prepend: site.baseurl }}" rel="stylesheet" />
+
+    <!-- Animation library for notifications   -->
+    <link href="{{ '/assets/css/animate.min.css' | prepend: site.baseurl }}" rel="stylesheet"/>
+
+    <!--  Light Bootstrap Table core CSS    -->
+    <link href="{{ '/assets/css/light-bootstrap-dashboard.css' | prepend: site.baseurl }}" rel="stylesheet"/>
+
+    <!--     Fonts and icons     -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+    <link href="{{ '/assets/css/pe-icon-7-stroke.css' | prepend: site.baseurl }}" rel="stylesheet" />
+
+    <!--  Custom CSS for app    -->
+    <link href="{{ '/assets/css/app.css' | prepend: site.baseurl }}" rel="stylesheet"/>
+
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="sidebar" data-color="orange" data-image="{{ '/assets/img/sidebar-4.jpg' | prepend: site.baseurl }}">
+
+    <!--
+
+        Tip 1: you can change the color of the sidebar using: data-color="blue | azure | green | orange | red | purple"
+        Tip 2: you can also add an image using data-image tag
+
+    -->
+
+    	<div class="sidebar-wrapper">
+            <div class="logo">
+                <!--<a href="http://www.conttudoweb.com.br" class="simple-text">
+                    ConTTudO web
+                </a>-->
+                <img src="{{ '/assets/img/logo_800.png' | prepend: site.baseurl }}" class="image" />
+            </div>
+
+            <ul class="nav">
+                <li class="{% if page.url == '/' %}active{% endif %}">
+                    <a href="/">
+                        <i class="pe-7s-home"></i>
+                        <p>Início</p>
+                    </a>
+                </li>
+                <li class="{% if page.url == '/portifolio/' %}active{% endif %}">
+                    <a href="/portifolio/">
+                        <i class="pe-7s-comment"></i>
+                        <p>Portifólio</p>
+                    </a>
+                </li>
+                <li class="{% if page.url == '/contato/' %}active{% endif %}">
+                    <a href="/contato/">
+                        <i class="pe-7s-comment"></i>
+                        <p>Fale conosco</p>
+                    </a>
+                </li>
+                <li class="{% if page.url == '/sobre/' %}active{% endif %}">
+                    <a href="/sobre/">
+                        <i class="pe-7s-info"></i>
+                        <p>Sobre nós</p>
+                    </a>
+                </li>
+            </ul>
+    	</div>
+    </div>
+
+    <!-- Overlay 
+	<div id="content" style="position: absolute; height: 100%; width: 100%;"></div>
+    -->
+
+    <div class="main-panel">
+        <nav class="navbar navbar-default navbar-fixed">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" ><i class="pe-7s-home"></i> Início</a>
+                </div>
+                
+                <div class="collapse navbar-collapse">
+                    <!--<ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#">
+                               <i class="pe-7s-user"></i> Login
+                            </a>
+                        </li>
+                    </ul>-->
+                </div>
+
+            </div>
+        </nav>
+
+        {{ content }}
+
+
+        <footer class="footer">
+            <div class="container-fluid">
+                <nav class="pull-left">
+                    <ul>
+                        <li>
+                            <a href="index.html">
+                                Início
+                            </a>
+                        </li>
+                        <li>
+                            <a href="porti.html">
+                                Início
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contato.html">
+                                Fale Conosco
+                            </a>
+                        </li>
+                        <li>
+                            <a href="sobre.html">
+                                Sobre nós
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <p class="copyright pull-right">
+                    &copy; 
+                    <script>
+                        document.write(new Date().getFullYear())
+                    </script>
+                    Todos os direitos reservados!
+                </p>
+            </div>
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+
+    <!--   Core JS Files   -->
+    <script src="{{ '/assets/js/jquery-1.10.2.js' | prepend: site.baseurl }}" type="text/javascript"></script>
+	<script src="{{ '/assets/js/bootstrap.min.js' | prepend: site.baseurl }}" type="text/javascript"></script>
+
+	<!--  Checkbox, Radio & Switch Plugins 
+	<script src="{{ '/assets/js/bootstrap-checkbox-radio-switch.js"></script>
+    -->
+
+	<!--  Charts Plugin 
+	<script src="{{ '/assets/js/chartist.min.js"></script>
+    -->
+
+    <!--  Notifications Plugin    
+    <script src="{{ '/assets/js/bootstrap-notify.js"></script>
+    -->
+
+    <!--  Google Maps Plugin    
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    -->
+
+    <!-- Light Bootstrap Table Core javascript and methods for Demo purpose -->
+	<script src="{{ '/assets/js/light-bootstrap-dashboard.js' | prepend: site.baseurl }}"></script>
+
+	<!-- Light Bootstrap Table DEMO methods, don't include it in your project! 
+	<script src="{{ '/assets/js/demo.js"></script>
+    -->
+
+    <!-- Particles Plugin 
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="{{ '/assets/js/particles.min.js"></script> -->
+
+    <!-- Custom JS for app -->
+    <script src="{{ '/assets/js/app.js' | prepend: site.baseurl }}"></script>
+
+</html>
