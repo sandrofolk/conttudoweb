@@ -5,16 +5,16 @@
 	<link rel="icon" type="image/png" href="{{ '/assets/img/favicon.png' | prepend: site.baseurl }}">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-	<title>{{ site.title }} | {{ page.title|default:"Soluções em tecnologia" }}</title>
+	<title>{{ page.title|default:"Soluções em tecnologia" }} | {{ site.title }}</title>
+    <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-    <meta name="Description" content="A ConTTudOweb é uma empresa de tecnologia dedicada a entregar produtos de qualidade e atualizados!">
     <meta name="Keywords" content="conttudo web, conttudo, criar site, website, design, responsivo, marketing digital, ecommerce, e-commerce, desenvolvimento, desenvolvimento site, desenvolvimento web, sites, apucarana, paraná, empresa de web, web, criaçoes de sites, sistemas web, conttudo apucarana, manutenção de sites, banners, SEO, Lojas Virtuais, wordpress, agencia web, Publicidade On Line, design web, sites responsivos, sites apucarana, lojas virtuais apucarana, e-commerces apucarana, catalogo online, sistemas online">
 
     <meta name="author" content="conttudoweb">
     <meta name="owner" content="ConTTudOweb - Soluções em tecnologia" />
 
     <meta property="og:image" content="">
-    <meta property="og:description" content="A ConTTudOweb é uma empresa de tecnologia dedicada a entregar produtos de qualidade e atualizados!">
+    <meta property="og:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
     <meta property="og:title" content="ConTTudOweb | Soluções em tecnologia">
 
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -68,7 +68,7 @@
                 </li>
                 <li class="{% if page.url == '/portifolio/' %}active{% endif %}">
                     <a href="/portifolio/">
-                        <i class="pe-7s-comment"></i>
+                        <i class="pe-7s-photo"></i>
                         <p>Portifólio</p>
                     </a>
                 </li>
@@ -93,66 +93,41 @@
     -->
 
     <div class="main-panel">
-        <nav class="navbar navbar-default navbar-fixed">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" ><i class="pe-7s-home"></i> Início</a>
-                </div>
-                
-                <div class="collapse navbar-collapse">
-                    <!--<ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="#">
-                               <i class="pe-7s-user"></i> Login
-                            </a>
-                        </li>
-                    </ul>-->
-                </div>
-
-            </div>
-        </nav>
 
         {{ content }}
-
 
         <footer class="footer">
             <div class="container-fluid">
                 <nav class="pull-left">
                     <ul>
                         <li>
-                            <a href="index.html">
-                                Início
+                            <a href="/">
+                                <i class="pe-7s-home"></i> INÍCIO
                             </a>
                         </li>
                         <li>
-                            <a href="porti.html">
-                                Início
+                            <a href="/portifolio/">
+                                <i class="pe-7s-photo"></i> PORTIFÓLIO
                             </a>
                         </li>
                         <li>
-                            <a href="contato.html">
-                                Fale Conosco
+                            <a href="/contato/">
+                                <i class="pe-7s-comment"></i> FALE CONOSCO
                             </a>
                         </li>
                         <li>
-                            <a href="sobre.html">
-                                Sobre nós
+                            <a href="/sobre/">
+                                <i class="pe-7s-info"></i> SOBRE NÓS
                             </a>
                         </li>
                     </ul>
                 </nav>
                 <p class="copyright pull-right">
-                    &copy; 
+                    &copy; 2014 -
                     <script>
                         document.write(new Date().getFullYear())
                     </script>
-                    Todos os direitos reservados!
+                    TODOS OS DIREITOS RESERVADOS!
                 </p>
             </div>
         </footer>
