@@ -68,7 +68,7 @@
                 </li>
                 <li class="{% if page.url == '/portifolio/' %}active{% endif %}">
                     <a href="/portifolio/">
-                        <i class="pe-7s-comment"></i>
+                        <i class="pe-7s-photo"></i>
                         <p>Portifólio</p>
                     </a>
                 </li>
@@ -93,66 +93,41 @@
     -->
 
     <div class="main-panel">
-        <nav class="navbar navbar-default navbar-fixed">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" ><i class="pe-7s-home"></i> Início</a>
-                </div>
-                
-                <div class="collapse navbar-collapse">
-                    <!--<ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="#">
-                               <i class="pe-7s-user"></i> Login
-                            </a>
-                        </li>
-                    </ul>-->
-                </div>
-
-            </div>
-        </nav>
 
         {{ content }}
-
 
         <footer class="footer">
             <div class="container-fluid">
                 <nav class="pull-left">
                     <ul>
                         <li>
-                            <a href="index.html">
-                                Início
+                            <a href="/">
+                                <i class="pe-7s-home"></i> INÍCIO
                             </a>
                         </li>
                         <li>
-                            <a href="porti.html">
-                                Início
+                            <a href="/portifolio/">
+                                <i class="pe-7s-photo"></i> PORTIFÓLIO
                             </a>
                         </li>
                         <li>
-                            <a href="contato.html">
-                                Fale Conosco
+                            <a href="/contato/">
+                                <i class="pe-7s-comment"></i> FALE CONOSCO
                             </a>
                         </li>
                         <li>
-                            <a href="sobre.html">
-                                Sobre nós
+                            <a href="/sobre/">
+                                <i class="pe-7s-info"></i> SOBRE NÓS
                             </a>
                         </li>
                     </ul>
                 </nav>
                 <p class="copyright pull-right">
-                    &copy; 
+                    &copy; 2014 -
                     <script>
                         document.write(new Date().getFullYear())
                     </script>
-                    Todos os direitos reservados!
+                    TODOS OS DIREITOS RESERVADOS!
                 </p>
             </div>
         </footer>
