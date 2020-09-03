@@ -16,7 +16,7 @@
 title: ConTTudOweb
 email: contato@conttudoweb.com.br
 description: >- # this means to ignore newlines until "baseurl:"
-  A ConTTudOweb é uma empresa de tecnologia dedicada a entregar produtos de qualidade e atualizados!
+  Soluções em tecnologia!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://conttudoweb.com.br/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: conttudoweb
